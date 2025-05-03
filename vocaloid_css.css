@@ -3,7 +3,7 @@ body{height: 100%;}
 body{background-color: #c9f5fe; margin:0; overflow: auto; cursor: url(images/cursor123.png), default; display: grid; grid-template-columns: 200px 1fr; grid-template-rows: auto 1fr auto; grid-template-areas:
     "aside header"
     "aside main"
-    "aside footer";}
+    "footer footer";}
 
 
 
