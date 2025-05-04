@@ -1,4 +1,7 @@
 # fandomikufr
+
+en cours de développements...
+
 fandomikufr est un site francais pour les fan de vocaloid en général.
 - les fonctions du site:
   - avoir un accès à l'actualités en direct des vocaloids
