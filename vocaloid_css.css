@@ -1,25 +1,25 @@
 body{height: 100%;}
 
-body{background-color: #c9f5fe; margin:0; overflow: auto; cursor: url(cursor123.png), default; display: grid; grid-template-columns: 200px 1fr; grid-template-rows: auto 1fr auto; grid-template-areas:
+body{background-color: #c9f5fe; margin:0; overflow: auto; cursor: url(images/cursor123.png), default; display: grid; grid-template-columns: 200px 1fr; grid-template-rows: auto 1fr auto; grid-template-areas:
     "aside header"
     "aside main"
     "footer footer";}
 
 
 
-aside{grid-area: aside; height: 100%; background-color: hsl(0, 0%, 0%); box-shadow: 2px 0 5px #000000; overflow: auto; resize: horizontal;}
+aside{grid-area: aside; height: 100%; background-color: hsl(0, 0%, 0%); box-shadow: 2px 0 5px #000000; overflow: auto;}
 .marge label{color: white; font-weight: bold; display: block; margin: 5px;}
 #barre_de_recherche{width: 93%; max-width: 200px; font-size: 16px; padding: 4px;}
 
-header{grid-area: header; border-bottom: 2px solid black; margin: 20px;}
+header{grid-area: header; border-bottom: 2px solid black; margin: 10px 30px 10px 30px;}
 header section{display: flex; align-items: center; justify-content: flex-start; text-align: left; max-width: 1200px; margin: 0 auto;}
 header div{max-width: 800px;}
 header h1{font-size: 3em; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bold; margin: 0;}
 header p{font-family: 'Arial', sans-serif; font-size: 18px; line-height: 1; margin: 10px 0 0 0;}
-header img{width: 100px; height: 100px; border: 1px solid black; border-radius: 10px; margin-right: 20px;}
+header img{width: 100px; height: 100px; border: 1px solid black; border-radius: 10px; margin: 10px 20px 20px 0;}
 
 
-main{grid-area: main; display: grid; grid-template-columns: 1fr; grid-template-rows: auto auto auto auto; gap: 10px; padding: 20px; min-height: 0;}
+main{grid-area: main; display: grid; grid-template-columns: 1fr; grid-template-rows: auto auto auto auto; gap: 10px; padding: 30px; min-height: 0;}
 
 .carousel-section {overflow: hidden; width: 100%; box-shadow: 2px 2px 10px #000000; border-radius: 15px;}
 .carousel-section h3{font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding-left: 30px;}
@@ -35,7 +35,8 @@ main section div figure img{width: 50px; height: 50px; background-color: hsl(180
 .article-section a{text-decoration: none; color: black; transition: color 0.3s ease;}
 .article-section a:hover{color:#00C3FF}
 
-.list-table{display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 20px; width: 100%;}
+.list-table{display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; width: 100%;}
+.list-table h3{text-align: center; margin: 10px 10px 20px 10px; transition: color 0.3s ease;}
 .list-vocaloid ul{padding: 0; list-style: none; border:1px solid black; box-shadow: 2px 3px 35px #000000; border-radius: 20px; overflow: hidden;}
 .list-vocaloid ul li{padding: 10px; border-bottom: 1px solid #ccc;}
 .list-vocaloid ul li:last-child{border-bottom: none;}
