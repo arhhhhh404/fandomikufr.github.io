@@ -1,65 +1,121 @@
 body{height: 100%;}
 
-body{background-color: #c9f5fe; margin:0; overflow: auto; cursor: url(images/cursor123.png), default; display: grid; grid-template-columns: 200px 1fr; grid-template-rows: auto 1fr auto; grid-template-areas:
+body{background-color: rgb(201, 245, 254); background-image: url(images/imagebackground.jpeg); background-repeat: no-repeat; background-size: cover; background-position: center;margin:0; overflow: auto; cursor: url(mikucursor\ \(1\).png), default; display: grid; grid-template-columns: 200px 1fr; grid-template-rows: auto 1fr auto; grid-template-areas:
     "aside header"
     "aside main"
     "footer footer";}
+a, button, input, select, textarea, label {cursor: url(images/ChatGPT_Image_May_11__2025__12_06_03_AM-removebg-preview\ \(1\).png), default;}
 
 
 
-aside{grid-area: aside; height: 100%; background-color: hsl(0, 0%, 0%); box-shadow: 2px 0 5px #000000; overflow: auto;}
-.marge label{color: white; font-weight: bold; display: block; margin: 5px;}
-#barre_de_recherche{width: 93%; max-width: 200px; font-size: 16px; padding: 4px;}
-
-header{grid-area: header; border-bottom: 2px solid black; margin: 10px 30px 10px 30px;}
-header section{display: flex; align-items: center; justify-content: flex-start; text-align: left; max-width: 1200px; margin: 0 auto;}
+header{grid-area: header;border-bottom: 2px solid black; margin: 10px 30px 10px 30px;}
+header section{display: flex; align-items:flex-start; justify-content: flex-start; text-align: left; max-width: 1200px; margin: 0 auto; margin-left: 1rem;}
 header div{max-width: 800px;}
 header h1{font-size: 3em; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bold; margin: 0;}
 header p{font-family: 'Arial', sans-serif; font-size: 18px; line-height: 1; margin: 10px 0 0 0;}
 header img{width: 100px; height: 100px; border: 1px solid black; border-radius: 10px; margin: 10px 20px 20px 0;}
 
 
+
 main{grid-area: main; display: grid; grid-template-columns: 1fr; grid-template-rows: auto auto auto auto; gap: 10px; padding: 30px; min-height: 0;}
 
-.carousel-section {overflow: hidden; width: 100%; box-shadow: 2px 2px 10px #000000; border-radius: 15px;}
-.carousel-section h3{font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding-left: 30px;}
+.carousel-section {background-color: rgb(201, 245, 254, 0.3); overflow: hidden; width: 100%; box-shadow: 2px 2px 10px #000000; border-radius: 15px;}
+.carousel-section h3{font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding: 10px 10px 0px 30px; text-decoration: underline;}
 .carousel-container {width: 80%; margin: 25px auto; overflow: hidden; border: 2px solid black; box-sizing: border-box;}
 .carousel-vocaloid {display: flex; flex-wrap: wrap; gap: 0; justify-content: center; width: max-content; animation: defilementInfini 25s linear infinite;}
 @keyframes defilementInfini {0% {transform: translateX(0);}100% {transform: translateX(-50%);}}
 .carousel-vocaloid figure{text-align: center;}
-main section div figure img{width: 50px; height: 50px; background-color: hsl(180, 100%, 87%); overflow: hidden; object-fit: cover; text-align: center}
+main section div figure img{width: 50px; height: 50px; background-color: none; overflow: hidden; object-fit: cover; text-align: center}
 
-.article-section{box-shadow: 2px 2px 10px #000000; border-radius: 15px; padding: 20px 30px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; line-height: 1.25;}
+.article-section{background-color: rgb(201, 245, 254, 0.3); box-shadow: 2px 2px 10px #000000; border-radius: 15px; padding: 20px 30px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; line-height: 1.25;}
 .article-section h3{font-size: 20px; padding-bottom: 10px; margin-bottom: 15px; border-bottom: 2px solid black;}
 .article-section ul{list-style: disc; padding-left: 50px; margin-top: 10px;}
 .article-section a{text-decoration: none; color: black; transition: color 0.3s ease;}
-.article-section a:hover{color:#00C3FF}
+#miku-hover:hover{color: #00C3FF;}
+#teto-hover:hover{color: #FF69B4;}
+#luka-hover:hover{color: #FFB6C1;}
+#meiko-hover:hover{color: #dd0000;}
+#kaito-hover:hover{color: #0000FF;}
+#rin-hover:hover{color: #FFD700;}
+#len-hover:hover{color: #FFA500;}
+#gumi-hover:hover{color: #7FFF00;}
 
 .list-table{display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; width: 100%;}
 .list-table h3{text-align: center; margin: 10px 10px 20px 10px; transition: color 0.3s ease;}
-.list-vocaloid ul{padding: 0; list-style: none; border:1px solid black; box-shadow: 2px 3px 35px #000000; border-radius: 20px; overflow: hidden;}
+.list-vocaloid ul{background-color: rgb(201, 245, 254, 0.3); padding: 0; list-style: none; border:1px solid black; box-shadow: 2px 3px 35px #000000; border-radius: 20px; overflow: hidden;}
 .list-vocaloid ul li{padding: 10px; border-bottom: 1px solid #ccc;}
 .list-vocaloid ul li:last-child{border-bottom: none;}
-.list-vocaloid ul li a{text-decoration: none; font-weight: bold;}
-#list_miku, #list_teto, #list_luka, #list_kaito, #list_rin, #list_len, #list_gumi{list-style: circle inside;}
-#list_miku a { color: #00C3FF; }
-#list_teto a { color: #FF69B4; }
-#list_luka a { color: #FFB6C1; }
-#list_kaito a { color: #0000FF; }
-#list_rin a { color: #FFD700; }
-#list_len a { color: #FFA500; }
-#list_gumi a { color: #7FFF00; }
-.table-vocaloid table{width: 100%; border-collapse: separate; border-spacing: 0; box-shadow: 2px 3px 35px black; border: 1px solid black; border-radius: 20px; overflow: hidden;}
+.list-vocaloid ul li a{text-decoration: none; font-weight: bold; padding-left: 10px;}
+#list_miku, #list_teto, #list_luka, #list_kaito, #list_rin, #list_len, #list_gumi{list-style: circle;}
+#list_miku{color: #00C3FF;}
+#list_teto{color: #FF69B4;}
+#list_luka{color: #FFB6C1;}
+#list_meiko{color: #dd0000;}
+#list_kaito{color: #0000FF;}
+#list_rin{color: #FFD700;}
+#list_len{color: #FFA500;}
+#list_gumi{color: #7FFF00;}
+.table-vocaloid table{background-color: rgb(201, 245, 254, 0.3); width: 100%; border-collapse: separate; border-spacing: 0; box-shadow: 2px 3px 35px black; border: 1px solid black; border-radius: 20px; overflow: hidden;}
 .table-vocaloid th, .table-vocaloid td{border: 1px solid black; text-align: center; padding: 8px;}
 .table-vocaloid th{font-weight: bold;}
-.table-vocaloid a{font-weight: bold;text-decoration: none; color: #000000; transition: color 0.3s ease;}
-.table-vocaloid a:hover{color:#00C3FF;}
+.table-vocaloid a{font-weight: bold; text-decoration: none; color: #000000; transition: color 0.3s ease;}
 
-footer{grid-area: footer; background-color: #000000;color: white; padding: 30px;}
+
+
+.toggle_aside {position: fixed; height: 100%; width: 100px;top: 0px; left: 0px; z-index: 1100; background-color: black; color: white; border: none; padding: 12px 16px; font-size: 24px; cursor: url(ChatGPT_Image_May_11__2025__12_27_43_AM-removebg-preview.png); border-radius: 0px 10px 10px 0px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); transition: background-color 0.3s, transform 0.2s;}
+.toggle_aside_close {position: relative; background-color: white; color: black; border: none; padding: 12px 16px; font-size: 24px; display: none;transition: background-color 0.3s, transform 0.2s;}
+
+
+.marge-aside{grid-area: aside; height: 100%; background-color: hsl(0, 0%, 0%); box-shadow: 2px 0 5px #000000; overflow: auto; display: none; transition: left 0.3s ease;}
+.marge-aside.active{display: inline;}
+
+.marge-container{margin: 10px 15px 15px 15px; padding-right: 15px;}
+.marge-container label{color: white; font-weight: bold; display: block; margin-bottom: 5px; text-decoration: underline; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 18px; font-weight: bold;}
+#barre_de_recherche{width: 100%; max-width: 220px; font-size: 16px; padding: 6px;}
+
+.account{display: flex; align-items: center; border-top: 2px solid white; margin-top: 10px; margin-bottom: 0; margin-left: 15px; margin-right: 15px;}
+.account img{width: 50px; height: 50px; border-radius: 100%; margin-left: 5px;}
+.account a{text-align: center; padding: 5px; color: white; font-weight: bold; text-decoration: none; font-size: 24px; margin-right: 5px;}
+.logsign_in {display: flex; justify-content: space-between; border-top: 2px solid white; margin-top: 2px; margin-bottom: 15px; margin-left: 15px; margin-right: 15px;}
+.logsign_in a{flex: 1; text-align: center; padding: 5px; color: white; font-weight: bold; text-decoration: none; font-size: 16px; box-sizing: border-box; word-break: break-all; font-size: 12px;}
+
+.tchat{color: white; border: 2px solid white; margin: 15px; padding: 5px; border-radius: 10px; box-sizing: border-box;}
+.tchat h4{font-size: 16px; margin-bottom: 0px; margin-top: 10px; border-bottom: 2px solid white; padding-bottom: 10px; padding-left: 10px;}
+.tchat-message{height: 300px; overflow-y: hidden; color: white; font-family: Arial, Helvetica, sans-serif; font-size: 12px; padding-left: 3px; margin-bottom: 10px; border-bottom: 2px solid white;}
+.tchat-message strong{text-decoration: underline; font-style: italic; font-size: 14px;}
+.tchat-envoie{display: flex; height: 90px; gap: 10px; color: white; flex-direction: column; margin-bottom: 2px;}
+.tchat-envoie input[type="text"] {padding: 10px; border-radius: 10px;}
+.tchat-envoie button{padding: 10px; font-weight: bold; border-radius: 10px; cursor: pointer; transition: background-color 0.3s ease;}
+
+.IA {color: white; margin: 20px 15px 25px 25px;}
+.IA summary{font-size: x-large; font-family:Verdana, Geneva, Tahoma, sans-serif;}
+.IA-dispo{padding: 10px 10px 10px 5px; margin-top: 0;}
+.IA-dispo li{margin-top: 7px; list-style-type:none; font-size: 16px; font-weight: bold;}
+.IA-dispo li::before{content: "- ";}
+.IA-dispo a{text-decoration: none; transition: color 0.3s;}
+
+.creation {color: white; margin: 0px 15px 25px 25px;}
+.creation summary{font-size: x-large; font-family:Verdana, Geneva, Tahoma, sans-serif;}
+.creation-dispo{padding: 10px 10px 10px 5px; margin-top: 0;}
+.creation-dispo li{margin-top: 7px; list-style-type:none; font-size: 13px; font-weight: bold;}
+.creation-dispo li::before{content: "- ";}
+.creation-dispo a{text-decoration: none; transition: color 0.3s; color: white;}
+
+.autre{color: white; margin: 0px 15px 25px 25px;}
+.autre summary{font-size: x-large; font-family:Verdana, Geneva, Tahoma, sans-serif;}
+.autre-dispo{padding: 10px 10px 10px 5px; margin-top: 0;}
+.autre-dispo li{margin-top: 7px; list-style-type:none; font-size: 13px; font-weight: bold;}
+.autre-dispo li::before{content: "- ";}
+.autre-dispo a{text-decoration: none; transition: color 0.3s; color: white;}
+
+
+
+footer{grid-area: footer; background-color: #000000;color: white; padding: 30px; box-shadow: 20px 0px 39px black;}
 footer div{display: flex; flex-wrap: wrap; justify-content: center; gap: 100px; text-align: left;}
-.AIDE h5, .CONTACT h5{font-size: 18px; margin-bottom: 15px; border-bottom: 2px solid white; display: inline-block; padding-bottom: 2px;}
-.CONTACT{border-left: 2px solid white; padding-left: 100px;}
-.liens-aide, .liens-contact{list-style: none; padding: 0; margin: 0}
-.liens-aide li, .liens-contact li, .liens-insta li{margin-bottom: 5px;}
+.AIDE h5, .CONTACT h5, .CRÉDIT h5{font-size: 18px; margin-bottom: 15px; border-bottom: 2px solid white; display: inline-block; padding-bottom: 2px;}
+.CONTACT{border-left: 2px solid white; padding-left: 100px; border-right: 2px solid white; padding-right: 100px;}
+.liens-aide, .liens-contact, .liens-crédit{list-style: none; padding: 0; margin: 0}
+.liens-aide li, .liens-contact li, .liens-insta li, .liens-crédit li{margin-bottom: 5px;}
 footer a{text-decoration: underline;color: white; transition: color 0.3s ease;}
-footer a:hover{color: #0000FF;}
+footer a:hover{color: #00C3FF;}
+.liens-insta{display: none;}
