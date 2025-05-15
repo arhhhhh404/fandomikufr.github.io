@@ -1,6 +1,6 @@
 body{height: 100%;}
 
-body{background-color: rgb(201, 245, 254); background-image: url(images/imagebackground.jpeg); background-repeat: no-repeat; background-size: cover; background-position: center; cursor: url(mikucuror.png), default; margin:0; overflow: auto; display: grid; grid-template-columns: 200px 1fr; grid-template-rows: auto 1fr auto; grid-template-areas:
+body{background-color: rgb(201, 245, 254); background-image: url(images/imagebackground.jpeg); background-repeat: no-repeat; background-size: cover; background-position: center; cursor: url(images/mikucursor1.png), default; margin:0; overflow: auto; display: grid; grid-template-columns: 200px 1fr; grid-template-rows: auto 1fr auto; grid-template-areas:
     "aside header"
     "aside main"
     "footer footer";}
@@ -62,8 +62,8 @@ main section div figure img{width: 50px; height: 50px; background-color: none; o
 
 
 
-.toggle_aside {position: fixed; height: 100%; width: 100px;top: 0px; left: 0px; z-index: 1100; background-color: black; color: white; border: none; padding: 12px 16px; font-size: 24px; cursor: url(ChatGPT_Image_May_11__2025__12_27_43_AM-removebg-preview.png); border-radius: 0px 10px 10px 0px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); transition: background-color 0.3s, transform 0.2s;}
-.toggle_aside_close {position: relative; background-color: white; color: black; border: none; padding: 12px 16px; font-size: 24px; display: none;transition: background-color 0.3s, transform 0.2s;}
+.toggle_aside {position: fixed; height: 100%; width: 100px; top: 0px; left: 0px; z-index: 1100; background-color: black; color: white; border: none; padding: 12px 16px; font-size: 24px; cursor: url(ChatGPT_Image_May_11__2025__12_27_43_AM-removebg-preview.png); border-radius: 0px 10px 10px 0px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); transition: background-color 0.3s, transform 0.2s;}
+.toggle_aside_close {position: relative; margin: 15px; background-color: black; color: white; border: none; padding: 10px 75px; font-size: 24px; display: none; transition: background-color 0.3s, transform 0.2s; box-shadow: 2px 2px 2px 2px white;}
 
 
 .marge-aside{grid-area: aside; height: 100%; background-color: hsl(0, 0%, 0%); box-shadow: 2px 0 5px #000000; overflow: auto; display: none; transition: left 0.3s ease;}
@@ -119,3 +119,28 @@ footer div{display: flex; flex-wrap: wrap; justify-content: center; gap: 100px; 
 footer a{text-decoration: underline;color: white; transition: color 0.3s ease;}
 footer a:hover{color: #00C3FF;}
 .liens-insta{display: none;}
+
+
+
+@media screen and (max-width: 600px) {
+    body {grid-template-columns: 1fr; grid-template-rows: auto 1fr auto; grid-template-areas:
+        "header"
+        "main"
+        "footer";}
+
+    header section {flex-direction: column; align-items: center; text-align: center;}
+
+    header img {width: 80px; height: 80px; margin: 0 auto 10px auto;}
+
+    .carousel-container {width: 100%; margin: 15px auto;}
+
+    .list-table {grid-template-columns: 1fr;}
+
+    .marge-aside {display: none;}
+
+    .toggle_aside {display: none;}
+
+    footer div {flex-direction: column; gap: 20px;}
+
+    .CONTACT {border: none; padding: 0;}
+}
