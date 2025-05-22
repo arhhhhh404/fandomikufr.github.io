@@ -26,3 +26,13 @@ hover.addEventListener("mouseover", () => {
         liens.style.display = 'none';
     }, 5000);
 });
+
+document.querySelectorAll("figure img[data-url]").forEach(img => {
+    img.style.cursor = "url(images/ChatGPT_Image_May_11__2025__12_06_03_AM-removebg-preview (1).png), default";
+    img.addEventListener("click", () => {
+        const target = img.getAttribute("data-url");
+        if (target) {
+            window.location.href = target;
+        }
+    });
+});
