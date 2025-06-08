@@ -123,26 +123,35 @@ footer a:hover{color: #00C3FF;}
 
 
 @media screen and (max-width: 600px) {
-    body {grid-template-columns: 1fr; grid-template-rows: auto 1fr auto; grid-template-areas:
-        "header"
-        "aside"
-        "main"
-        "footer";}
+    body {grid-template-columns: 1fr; grid-template-rows: auto auto 1fr auto; grid-template-areas:
+            "header"
+            "aside"
+            "main"
+            "footer";font-size: 14px; background-image: url(images/imgbackground.jpeg)}
 
     header section {flex-direction: column; align-items: center; text-align: center;}
-
+    header h1 {font-size: 2em;}
+    header p {font-size: 14px; margin-top: 5px;}
     header img {width: 80px; height: 80px; margin: 0 auto 10px auto;}
 
     .carousel-container {width: 90%;}
+    .carousel-section h3 {font-size: 16px; padding-left: 15px;}
 
     .list-table {grid-template-columns: 1fr;}
+    .list-vocaloid ul li a {font-size: 14px;}
 
     .marge-aside {display: none; margin-left: 30px; margin-right: 30px; margin-top: 10px; border-radius: 15px; box-shadow: 2px 2px 10px #000000;}
 
     .toggle_aside {width: 60px; height: 60px;}
-    .toggle_aside_close{width: 95%;}
+    .toggle_aside_close {width: 95%;}
 
     footer div {flex-direction: column; gap: 20px;}
+    footer, footer a {font-size: 14px;}
+    .CONTACT {border-bottom: 2px solid white; border-left: none; border-right: none; padding: 0px 0px 40px 0px}
+    .AIDE {border-bottom: 2px solid white; padding-bottom: 40px;}
 
-    .CONTACT {border: none; padding: 0;}
+    .tchat-message {font-size: 10px; height: 200px;}
+    .tchat h4 {font-size: 14px;}
+    .tchat-envoie input[type="text"] {font-size: 12px;}
+    .tchat-envoie button {font-size: 14px;}
 }
